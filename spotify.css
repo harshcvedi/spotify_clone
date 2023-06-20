@@ -1,0 +1,412 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background-color: black;
+}
+nav{
+    background-color: black;
+    font-size: 16px;
+    height: 55px;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    border: 1px solid grey;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width:400px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    padding: 14px 0px;
+}
+
+
+@media all and (max-width:620px){
+    nav{
+        flex-direction: column;
+    }
+
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #harsh32{
+        flex-direction: column;
+    }
+    #harsh30{
+        flex-direction: column;
+    }
+    #harsh31{
+        flex-direction: column;
+    }
+    #harsh29{
+        flex-direction: column;
+    }
+    #harsh28{
+        flex-direction: column;
+    }
+    #harsh27{
+        flex-direction: column;
+    }
+    #harsh26{
+        flex-direction: column;
+    }
+    #harsh25{
+        flex-direction: column;
+    }
+}
+
+
+
+#logo img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+
+
+
+#harshspotify{
+    position: absolute;
+    left:47px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#harsh2{
+    position: absolute;
+    left: 155px;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    position: absolute;
+    right: 180px;
+    height: 20px;
+    font-weight: 700;
+    text-align: center;
+    background-color: lightblue;
+}
+
+#glass{
+    color:grey;
+    z-index: 1;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    right:350px ;
+    margin-top: 4px;
+}
+
+#phone{
+    position: absolute;
+    right: 75px;
+    top: 4px;
+}
+
+#bell{
+    position: relative;
+    left: 616px;
+    z-index: 1;
+    color:grey;
+    margin-top: 4px;
+    
+}
+
+
+figure{
+    margin-top: 55px;
+    transition: 450ms;
+}
+figure img{
+    height: 300px;
+    width: 300px;
+    margin: 15px;
+    border-radius: 50px;
+}
+
+figure img:hover{
+    cursor: pointer;
+    transform: scale(1.09);
+}
+
+
+article main img{
+    height: 100px;
+    width: 100px;
+    float: left;
+  
+    
+}
+article main{
+    color: white;
+}
+
+article{
+    height: 440px;
+    width: 850px;
+    margin-left: 11px;
+    
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+article main{
+    margin-top: 10px;
+    margin-left:10px;
+    height: 100px;
+    width: 400px;
+    
+}
+article main h1{
+    padding: 10px;
+    margin-left:105px;
+}
+
+article main h2{
+    margin-left:115px;
+}
+
+h1 span{
+    margin-left: 180px;
+}
+
+h2 span{
+    margin-left: 65px;
+}
+
+article main img:hover{
+    
+    opacity: 0.3;
+    cursor: pointer;
+    filter: grayscale(20%);
+}
+
+article main{
+    position: relative;
+}
+article main i{
+    color: white;
+    position: absolute;
+    top: 38%;
+    left: 10%;
+    z-index: 4;
+    transform: scale(0);
+    transition: 400ms;
+    transition-timing-function: ease-out;
+}
+
+article main:hover i{
+    
+        transform: scale(1.5);
+   
+}
+
+#harsh23 img{
+    margin-top: 15px;
+    border-radius: 40%;
+    margin-left: 15px;
+    height: 150px;
+    width: 150px;
+}
+
+#harsh25{
+    margin-top: 15px;
+    height: 250px;
+    width: 99.8%;
+    
+    display: flex;
+    margin-bottom: 10px;
+    gap: 4px;
+    
+}
+
+#harsh25:hover{
+    animation: slider 2.5s linear infinite;
+    animation-timing-function: ease-out;
+    cursor: pointer;
+}
+
+@keyframes slider {
+    100%{
+        transform: translateX(-400px);
+    }
+    
+}
+
+#harsh26{
+    height: 250px;
+    width: 99.8%;
+    
+    margin-bottom: 15px;
+    display: flex;
+    
+    gap: 8px;
+}
+
+
+#harsh28 img{
+    position: relative;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    
+}
+#harsh27 div img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+}
+
+#harsh27{
+    display: flex;
+    overflow: hidden;
+    gap: 25px;
+}
+
+#harsh27:hover{
+    animation: key 2.5s linear infinite;
+    animation-timing-function: ease-out;
+    cursor: pointer;
+}
+
+@keyframes key {
+
+    100%{
+        transform: translateX(-400px);
+    }
+}
+
+#harsh28{
+    z-index: 1;
+}
+
+#harsh29{
+    height: 300px;
+    width: 98%;
+    
+    margin-bottom: 15px;
+    margin-left: 19px;
+    display: flex;
+    overflow: hidden;
+   
+    gap: 25px;
+
+}
+
+#harsh29 img{
+    margin-top: 15px;
+    height: 200px;
+    width: 200px;
+   
+}
+#harsh29:hover{
+    animation: key1 2.5s linear infinite;
+    animation-timing-function: ease-out;
+    cursor: pointer;
+}
+
+
+@keyframes key1 {
+
+    100%{
+        transform: translateX(-400px);
+    }
+}
+
+
+#harsh30{
+    background-color: black;
+    height:800px;
+    width: 500px;
+    border: 1px solid grey;
+    overflow-y: scroll;
+    position: absolute;
+    right: 0;
+    top: 55px;
+    z-index: 2;
+    border-top: none;
+    border-right: none;
+}
+
+
+#harsh30::-webkit-scrollbar{
+    display: none;
+}
+#harsh30 div {
+    color: white;
+}
+
+#harsh30 div img{
+    height: 80px;
+    width: 80px;
+}
+
+#harsh31{
+    display: flex;
+    margin-top: 35px;
+    margin-left: 20px;
+    gap: 75px;
+
+}
+
+#harsh30 h1 span{
+    color: green;
+    position: absolute;
+    right: 10px;
+}
+
+#harsh32{
+    overflow-y: scroll;
+    width: 100vw;
+    height: 800px;
+    
+    
+}
+
+#harsh32::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+#harsh31 h3 i:hover{
+    cursor: pointer;
+    
+}
+
+#harsh35 img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+}
